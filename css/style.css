@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Cinzel:400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Rubik+One);
+/*this is a comment*/
+
+
+/*Review the CSS syntax*/
+
+
+/*selector 
+property 
+value */
+
+p{
+  font-size: 16px;  
+  line-height: 1.5em;
+}
+
+figcaption{
+  font-weight: normal;
+  font-size:0.75em;
+  line-height: 1.5em;
+  font-family:'Rubik One', 'sans-serif', 'New Times Roman', Serif; 
+}
+
+/*class selector*/
+
+.milk-text{ /*selelct elements with class = "=milk-text" */
+font: bold 2.6em 'Rubik One' Serif;
+color:blue;
+text-shadow: 0 2px 3px #39122f;
+}
+
+
+/*ID selector apply once per page */
+
+#logo { 
+background:#CDC1C5 ;
+}
+
+
+/*descendent selector */
+#logo h1{
+font-family: 'Rubik One';
+}
+
+#logo h2{
+font-family:Cinzel;
+}
+
+/*Pseudo class selector */
+
+#details a:link,#details a:visited {
+  color:black;
+  text-decoration: none;
+}
+
+#details a:hover{
+  color:black;
+  text-decoration: underline;
+}
+
+#details a:active{
+  color:green;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
