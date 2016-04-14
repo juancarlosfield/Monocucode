@@ -20,6 +20,7 @@ figcaption{
   font-size:0.75em;
   line-height: 1.5em;
   font-family:'Rubik One', 'sans-serif', 'New Times Roman', Serif; 
+  color: white;
 }
 
 /*class selector*/
@@ -157,7 +158,7 @@ section{
   display: block;
   width: 40px;
   height: 40px;
-  background: yellow;
+  background: white;
 }
 
 
@@ -177,16 +178,24 @@ section{
 .galaxy {
   background: url(http://24.media.tumblr.com/tumblr_m3pru5bier1rqkghxo1_400.gif) no-repeat center top;
   background-size: cover;
+}
+
+.slider-nav{
+  width: 100%;
+    height: 500px;
+    border: 3px solid #fff;
+}
 
 
+#planets {
+
+}
 
 
-
-
-
-
-
-
+.chew{
+width:100% ;
+height:50px;
+}
 
 
 
