@@ -65,6 +65,124 @@ font-family:Cinzel;
 }
 
 
+#monocucode-concept{
+  font-family: cursive;
+}
+
+#events{
+  font-family: bold, Cinzel;
+}
+
+
+/*/////////LAYOUT///////////*/
+*{
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+
+
+
+.wrapper{
+  width:960px;
+  margin: 0 auto;
+  background: #eee;
+}
+
+
+
+.col-1{
+float:left;
+width: 32%;
+background:#ccc ;
+
+}
+
+
+
+.col-2{
+float:left;
+width: 66%;
+background:#ccc ;
+
+}
+
+.col-3{
+background:#ccc ;
+}
+
+.clearfix:after {
+  content:".";
+  display: block;
+  visibility: hidden;
+  height:0;
+  line-height: 0;
+}
+
+[class*="col-"] {
+  margin-left:2%;
+}
+
+.first {
+  margin-left:0;
+}
+
+
+
+
+
+/*////////////////SECTION////////////////*/
+
+
+
+
+section{
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+
+/*////////////////SOCIAL///////////////*/
+#social {
+  position: fixed;
+  top: 200px;
+  right: 20px;
+  width: 40px;
+  z-index: 1;
+}
+
+
+#social a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: yellow;
+}
+
+
+#worlds{
+  height: 100px;
+  width: 100px;
+  }
+
+.slick-slide img {
+  width: 100%;
+}
+
+
+
+/*////////// BACKGROUNDS //////////*/
+
+.galaxy {
+  background: url(http://24.media.tumblr.com/tumblr_m3pru5bier1rqkghxo1_400.gif) no-repeat center top;
+  background-size: cover;
+
+
+
+
+
+
 
 
 

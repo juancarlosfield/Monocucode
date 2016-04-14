@@ -7,79 +7,149 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>
+<div id="social">
+  <a href="#" target="_blank">Facebook</a>
+  <a href="#" target="_blank">Twitter</a>
+  <a href="#" target="_blank">Instagram</a>
+  <a href="#" target="_blank">linkedin</a>
+</div>
 
 <body>
+
+<div class="galaxy">
   
 <header>
-  <div id="logo">
-    <h1>Monocucode</h1>
-    <h2>RPG</h2>
-  </div>
+  <div class="wrapper">
+    <div id="logo">
+      <h1>Monocucode</h1>
+      <h2>RPG</h2>
+   
 
 
-    <nav>
-    <a href="index.html">About</a>  <a href="game.html">Game</a>  <a href="dice.html">Dice</a>  <a href="weapons.html">Weapons</a>  <a href="music.html" >Music</a>  <a href="contact.html">Contact</a>  <a href="https://en.wikipedia.org/wiki/Role-playing_game" target="_blank">R.P.G</a>
-    </nav>
+<!-- dice -->
+<style type="text/css">
+  div.dice{
+    float:left;
+    width:32px;
+    background:#F5F5F5;
+    border:#999 1px solid;
+    padding:10px;
+    font-size:24px;
+    text-align:center;
+    margin:5px; 
+  }
 
-    
 
+</style>
+<script>
+function rollDice(){
+      var die1 = document.getElementById("die1");
+      var die2 = document.getElementById("die2");
+      var status = document.getElementById("status");
+      var d1 = Math.floor(Math.random() * 6) + 1; 
+      var d2 = Math.floor(Math.random() * 6) + 1; 
+      var diceTotal = d1 + d2;
+      die1.innerHTML = d1;
+      die2.innerHTML = d2;
+      status.innerHTML = "You rolled"+diceTotal+"."
+      if(d1===d2){
+        status.innerHTML +="DOUBLES! YOU GET A FREE TURN!!!";
+   }
+
+}
+
+
+</script>
+
+
+
+<h3 class="milk-text">Dice</h3>
+
+<div id="die1" class="dice">0</div>
+<div id="die2" class="dice">0</div>
+<button onClick="rollDice()">Roll Dice</button>
+<h2 id="status" style="clear:left;"></h2>
+
+<!-- dice --> 
+
+
+    </div>
+
+          <nav>
+                <a href="index.html">About</a>  <a href="game.html">Game</a>  <a href="dice.html">Dice</a>  <a href="weapons.html">Weapons</a>  <a href="music.html" >Music</a>  <a href="contact.html">Contact</a>  <a href="https://en.wikipedia.org/wiki/Role-playing_game" target="_blank">R.P.G</a>
+          </nav>
+ </div><!-- wrapper! for the bar -->
+  
 </header>
 
 
-<section id="monocucode-concept">
+  <div class="wrapper clearfix">
 
-    <img src="images/monkeyW3PieceSuit.jpg" alt="Mr. MonoCucode" title = "Welcome, Bienvenido, Bienvenue." ><figcaption>Mr. Monocucode</figcaption> 
-
-    <!-- foldername/= go inside the folder.
-    filename= use a file in the current folder.
-    ../ =  leave the current folder and go to the parent folder.  -->
-
-    <p>Hello World!!!! <br>I am that I am. The creator, part of you . <br>I am a web mobile developer. I have a Lamborghini. My mind has no limits, yours is endless...</p> 
-
-    <p>This is what happens when you take the blue pill, or was the red one?<br> be concious that today is the last day of your fisrt. You are about to enter into a bridge where it connects reason and logical onto patterns places and frontiers never ever felt before. yur body may change or not; Nevertheless, your mind after today will no longer connect to this World the same. </p>
-
-</section id="details">
-
-<section id="find">
-  <div>
-    <h3 class="milk-text">Find me at</h3> 
-        <p> 
-           email: <a href="mailto:juan.field@monocucode.com">juan.field@monocucode.com</a><br>
-           phone: +212-555-1234
-        </p> 
-    <h3 class="milk-text">Correspondance</h3>
-        <address>
-          Monocucode.com<br>
-          123 Elm St. <br>   
-          LIC, Queens/NY 11106 <br>
-        </address> 
-  </div> 
-
-  <div>
-    <h3 class="milk-text">Links</h3>
-        <p>
-          <a href="http://wateva.co/" target="_blank">Engineering your Success.</a>
-          <a href="http://lafraternidad387.org/index.php?option=com_content&view=article&id=1&Itemid=10" target="_blank">Builders.</a>
-          <a href="http://flatironschool.com/" target="_blank">Learn to love Code.</a>
-        </p>
-
-  </div>      
+     <section id="monocucode-concept" class="col-3 first">
+                <div id="monopic">
+                      <img src="images/monkeyW3PieceSuit.jpg" alt="Mr. MonoCucode" title = "Welcome, Bienvenido, Bienvenue." ><figcaption>Mr. Monocucode</figcaption> 
 
 
-  <div>
-    <h3 class="milk-text">Follow me</h3>
-        <p>
-          <a href="#" target="_blank">Facebook</a>
-          <a href="#" target="_blank">Twitter</a>
-          <a href="#" target="_blank">Instagram</a>
-          <a href="#" target="_blank">linkedin</a>
-       </p>
+                      <img src="http://31.media.tumblr.com/629de1a51c09c1c0c441c9a81520f9fd/tumblr_mxvg5jGdNs1sicas5o1_r1_400.gif" alt="space" title"beyond">
+                </div>
+              <!-- foldername/= go inside the folder.
+              filename= use a file in the current folder.
+              ../ =  leave the current folder and go to the parent folder.  -->
+            
+                <div id="monoWords">
+                      <p>Hello World!!!! <br>I am that I am. The creator, part of you . <br>You will read this story and pick your best guess. I will be everyone in this story except you. My mind has no limits, yours is endless...</p> 
 
-  </div>
+                      <p>This is what happens when you take the blue pill, or was the red one?<br> be concious that today is the last day of your first. Imagine that You are about to enter into a bridge where it connects reason and logical onto patterns places and frontiers never ever felt before. your body may change or not; Nevertheless, your mind after today will no longer connect to this World the same. Give yourself a break and enjoy being a kid, because those who always remember the amazing childhood you once got will provide you with the survival kit you need being adult. </p>
+                </div>
+          
+     </section >
 
+
+          <section id="events" class="col-3 first"><h3>Events</h3><h4>Nosce Te Ipsum</h4>
+                 <p>WE RESERVED THE RIGHT OF ALL OF OUR EVENTS. YOU WILL CONTACT YOU</p>
+          </section>
+  </div> <!-- CLosing wrapper!!! -->
+
+
+<section id="details">
+  <div class="wrapper clearfix">
+      <div>
+            <h3 class="milk-text">Find me at</h3> 
+              <p> 
+                 email: <a href="mailto:juan.field@monocucode.com">juan.field@monocucode.com</a><br>
+                 phone: +212-555-1234
+              </p> 
+            <h3 class="milk-text">Correspondance</h3>
+              <address>
+                Monocucode.com<br>
+                123 Elm St. <br>   
+                LIC, Queens/NY 11106 <br>
+              </address> 
+      </div> 
+
+      
+
+      <div>
+        <h3 class="milk-text">Links</h3>
+            <p>
+              <a href="http://wateva.co/" target="_blank">Engineering your Success.</a><br>
+              <a href="http://lafraternidad387.org/index.php?option=com_content&view=article&id=1&Itemid=10" target="_blank">Builders.</a><br>
+              <a href="http://flatironschool.com/" target="_blank">Learn to love Code.</a>
+            </p>
+      </div>      
+
+
+      <div>
+        <h3 class="milk-text">Follow me</h3>
+            <p>
+              <a href="#" target="_blank">Facebook</a>
+              <a href="#" target="_blank">Twitter</a>
+              <a href="#" target="_blank">Instagram</a>
+              <a href="#" target="_blank">linkedin</a>
+           </p>
+      </div>
+  </div><!-- closing wrapper!!! -->
   
-
-
 
 
 </section>
@@ -89,7 +159,7 @@
   &copy; 2016 Monocucode.com. All Rights Reserved.
 </footer>
 
-
+</div> <!-- galaxy -->
 </body>
 </html>
 

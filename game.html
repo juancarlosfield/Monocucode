@@ -6,8 +6,17 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.min.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css"/>
 </head>
+
+
+
+
 <body>
+
+ <div class="galaxy"> 
   <h1>Monocucode</h1>
   <h2>RPG</h2>
 
@@ -19,28 +28,130 @@
   <h3 class="milk-text">Game</h3>
   <h4 class="milk-text">Story Characters</h4>
 
+
+<!-- carousel-->
+
+
+<!-- // To use lazy loading, set a data-lazy attribute
+// on your img tags and leave off the src
+
+<img data-lazy="img/lazyfonz1.png"/>
+
+$('.lazy').slick({
+  lazyLoad: 'ondemand',
+  slidesToShow: 3,
+  slidesToScroll: 1
+});
+  
+ -->
+
+
+<!-- carousel -->
+
+<div class="slider-nav">
+
 <figure> <img src="images/Chewbacca.jpg" alt="Chewie"><figcaption>Chewbacca</figcaption></figure>
 <figure> <img src="images/crazymonkey.jpg" alt="monkey"><figcaption>Monkey</figcaption></figure>
 <figure> <img src="images/Kid_Goku.png" alt="Goku"><figcaption>Goku</figcaption></figure>
+</div>
+
+<script>
+  $('.slider-nav').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    dots: true,
+    centerMode: true,
+    focusOnSelect: true
+  });
+</script>
+
+
+
 
 <!-- Map/ Worlds -->
 
 <h3 class="milk-text">Worlds</h3>
 <!-- ordered list-->
-  <section id="worlds">
-  <img src="http://www.learning-mind.com/wp-content/uploads/2013/10/space-mysteries.jpg" alt="spacePic"><figcaption>In the Space</figcaption> </section>
+  <!-- <section>
+  <img src="http://www.learning-mind.com/wp-content/uploads/2013/10/space-mysteries.jpg" alt="spacePic"><figcaption>In the Space</figcaption> </section> -->
   
-  <section>
-  <img src="http://orig06.deviantart.net/f37a/f/2012/232/9/8/dawn_of_the_juggernaut_by_schur-d5brmgr.jpg" alt="planetPic"><figcaption>The Unknown Planet</figcaption></section>
+  <!-- <section>
+  <img src="http://orig06.deviantart.net/f37a/f/2012/232/9/8/dawn_of_the_juggernaut_by_schur-d5brmgr.jpg" alt="planetPic"><figcaption>The Unknown Planet</figcaption></section> -->
   
-  <section>
-  <img src="http://img05.deviantart.net/9be7/i/2014/134/3/a/concepting_a_mystery_jungle_by_gycinn-d7ico97.jpg" alt="junglePic"><figcaption>Welcome to the Jungle</figcaption></section>
+  <!-- <section>
+  <img src="http://img05.deviantart.net/9be7/i/2014/134/3/a/concepting_a_mystery_jungle_by_gycinn-d7ico97.jpg" alt="junglePic"><figcaption>Welcome to the Jungle</figcaption></section> -->
+
+  <div class="slider-nav">
+      <div id="worlds">
+        <img src="http://orig06.deviantart.net/f37a/f/2012/232/9/8/dawn_of_the_juggernaut_by_schur-d5brmgr.jpg" alt="planetPic">
+      </div>
+      <div id="worlds">
+        <img src="http://www.learning-mind.com/wp-content/uploads/2013/10/space-mysteries.jpg" alt="spacePic">
+      </div>
+      <div id="worlds">
+        <img src="http://img05.deviantart.net/9be7/i/2014/134/3/a/concepting_a_mystery_jungle_by_gycinn-d7ico97.jpg" alt="junglePic">
+      </div>
+      <!-- <div>
+        <img src="http://img05.deviantart.net/9be7/i/2014/134/3/a/concepting_a_mystery_jungle_by_gycinn-d7ico97.jpg" alt="junglePic">
+      </div> -->
+  </div>
 
 
 
 
 
 
+<div class="owl-carousel">
+    <div class="item-video" data-merge="3"><a class="owl-video" href="https://www.youtube.com/watch?v=vSYadh2xmcI"></a></div>
+    <div class="item-video" data-merge="1"><a class="owl-video" href="https://www.youtube.com/watch?v=z5oDh7o3a00"></a></div>
+    <div class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=9d4ui9q7eDM"></a></div>
+    <div class="item-video" data-merge="1"><a class="owl-video" href="https://www.youtube.com/watch?v=keIPYS0ddLE"></a></div>
+    <div class="item-video" data-merge="2"><a class="owl-video" href="https://youtu.be/hMui2n2KEus"></a></div>
+    <div class="item-video" data-merge="3"><a class="owl-video" href="https://youtu.be/x9ZRjIiNzhM"></a></div>
+    <div class="item-video" data-merge="1"><a class="owl-video" href="https://youtu.be/9jK-NcRmVcw"></a></div>
+    <div class="item-video" data-merge="2"><a class="owl-video" href="https://youtu.be/aq-CKdT6IG4"></a></div>
+</div>
 
+
+
+<script>  
+    $('.owl-carousel').owlCarousel({
+        items:1,
+        merge:true,
+        loop:true,
+        margin:10,
+        video:true,
+        lazyLoad:true,
+        center:true,
+        responsive:{
+            480:{
+                items:2
+            },
+            600:{
+                items:4
+            }
+        }
+    })
+
+</script>
+
+
+
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/owl.carousel.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+
+<script>
+  $('.slider-nav').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    dots: true,
+    centerMode: true,
+    focusOnSelect: true
+  });
+</script>
+</div> <!-- galaxy -->
 </body>
 </html>
